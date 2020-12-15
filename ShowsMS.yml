@@ -1,0 +1,7 @@
+# server port and context path
+server:
+    port: 8030
+    servlet.context-path: /shows
+    
+# Database url
+spring.datasource.url: jdbc:mysql://localhost:3306/bookit_shows

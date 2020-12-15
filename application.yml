@@ -1,0 +1,17 @@
+#DB configuration
+spring:
+    datasource: 
+        username: root
+        password: Mysql@1234
+        driverClassName: com.mysql.jdbc.Driver
+        initialization-mode: always
+    
+    jpa:
+        properties.hibernate:
+            dialect: org.hibernate.dialect.MYSQL8Dialect
+#            format-sql: true
+#        show-sql: true
+        hibernate.ddl-auto: none
+    
+# eureka configuration
+eureka.client.service-url.defaultZone: http://localhost:2222/eureka
